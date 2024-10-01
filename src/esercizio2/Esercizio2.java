@@ -1,11 +1,12 @@
 package esercizio2;
 
+
 import java.util.*;
 
 public class Esercizio2 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.println("Qunati numeri voui stampare? ");
+        System.out.println("Quanti numeri voui stampare? ");
         int N = 0;
         while (true) {
             try {

@@ -10,7 +10,7 @@ public class Esercizio1 {
         System.out.println("Insersci il numero di parole: ");
         int N = 0;
 
-        while (true){
+        while (true) {
             try {
                 N = Integer.parseInt(in.nextLine());
                 if (N <= 0) System.out.println("Inserisci un numero positivo");
@@ -19,14 +19,14 @@ public class Esercizio1 {
                 System.out.println("Input non valido. Inserisci un numero (intero): ");
             }
         }
-        Set <String> parole = new HashSet<>();
-        Set <String> paroleRipetute = new HashSet<>();
+        Set<String> parole = new HashSet<>();
+        Set<String> paroleRipetute = new HashSet<>();
 
-        for (int i=0; i<N; i++) {
-            int index = i+1;
-            System.out.print("Inserisci la #"+index+": ");
+        for (int i = 0; i < N; i++) {
+            int index = i + 1;
+            System.out.print("Inserisci la #" + index + ": ");
             String parola = in.nextLine().trim().toLowerCase();
-            if (!parole.add(parola)){
+            if (!parole.add(parola)) {
                 paroleRipetute.add(parola);
             }
         }
@@ -34,14 +34,14 @@ public class Esercizio1 {
 
         if (!paroleRipetute.isEmpty()) {
             System.out.println("\nParole duplicate:");
-            for (String parola : paroleRipetute){
+            for (String parola : paroleRipetute) {
                 System.out.println(parola);
             }
         } else {
             System.out.println("\nNon ci sono parole dupicate.");
         }
 
-        System.out.println("\nNumero parole inserite: "+ parole.size());
+        System.out.println("\nNumero parole inserite: " + parole.size());
         System.out.println("Elenco parote inserite:");
         for (String parola : parole) {
             System.out.println(parola);
