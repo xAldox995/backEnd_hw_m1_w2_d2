@@ -25,7 +25,7 @@ public class Esercizio1 {
         for (int i=0; i<N; i++) {
             int index = i+1;
             System.out.print("Inserisci la #"+index+": ");
-            String parola = in.nextLine().trim();
+            String parola = in.nextLine().trim().toLowerCase();
             if (!parole.add(parola)){
                 paroleRipetute.add(parola);
             }
